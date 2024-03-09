@@ -1,0 +1,585 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    
+}
+h2 {
+    font-size: 1.9rem;
+}
+
+/* NAVBAR */
+.header {
+    background-color: rgb(221, 221, 221);
+    
+}
+
+.nav-container {
+    width: 100%;
+    background-color: seashell;
+    /* margin: auto; */
+    padding: 1rem ;
+    display: flex;
+    /* position: fixed; */
+    z-index: 100;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+.nav-list {
+    width: 80%;
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    /* background-color: aqua; */
+} 
+
+.nav-logo {
+    width: 20%;
+    /* background-color: aqua; */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-item a, .nav-logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+
+}
+
+#background-image img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* body {
+    width: 100vw;
+    height: 100vh;
+    background: url(Assets/home-bg.jpg);
+    background-size: cover;
+} */
+
+/* ABOUT ME */
+#personal-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.aboutme {
+    display: flex;
+    width: 100%;
+}
+
+.personal-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.personal-img img {
+    width: 70%;
+    height: 50%;
+    object-fit: contain; 
+    display: flex;
+    align-items: center;
+    
+}
+
+.personal-desc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.personal-explaination {
+    height: 100%;
+    width:  100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-explaination {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skill-info {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* background-color: aliceblue; */
+    padding: 50px 250px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.skill-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    border-right: 1px solid black;
+    
+}
+
+.skill-list:last-child {
+    border-right: none;
+}
+
+.skill-header {
+    color: gray;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    /* margin-bottom: 100px; */
+    padding: 50px;
+    border-bottom: 1px solid black;
+    
+}
+
+.skill-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 50px;
+    border-radius: 50px;
+}
+
+
+.skill-set-item {
+    padding: 50px 0px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-bottom: 1px solid black;
+    list-style: none;
+}
+
+.skill-set-item:last-child {
+    border-bottom: none;
+}
+
+/* RESUME */
+#personal-resume {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: white;
+}
+
+.personal-explaination-resume {
+    text-align: justify;
+    padding: 0px 100px;
+}
+
+.resume-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 50px 100px;
+}
+
+
+.desc {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.education, .experience {
+    width: 50%;
+    height: auto;
+    display: flex;
+}
+
+.personal-education, .personal-experience {
+    /* background-color: aqua; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-right: 1px solid black;
+}
+
+.personal-experience:last-child {
+    border-right: none;
+}
+
+.school-list, .experience-list {
+    position: relative;
+    left: 50px;
+    margin: 20px 0px;
+    font-size: 1.5rem;
+}
+
+
+.school-list-item, .experience-list-item {
+    padding: 5px 0;
+}
+
+.main-info {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.main-year {
+    width: auto;
+    display: inline-block;
+    background-color: aliceblue;
+}
+
+.desc {
+    font-size: 1.8rem;
+}
+
+.joblist {
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.joblist-item {
+    font-size: 1.4rem;
+    text-align: justify;
+    position: relative;
+    left: 50px;
+}
+
+
+h2, h3 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.personal-explaination {
+    text-align: justify;
+    padding: 0px 100px;
+}
+
+/* Portofolio */
+#personal-portofolio {
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding : 20px 10px
+}
+
+.thumbnail {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    position: relative;
+}
+
+.thumbnail img {
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.thumbnail-pic {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   position: relative;
+   
+}
+
+.thumbnail-pic img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid black;
+    filter: brightness(100%);
+ }
+
+ .thumbnail-pic img:hover {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid black;
+    filter: brightness(50%);
+ }
+
+ .overlay {
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.7s;
+ }
+
+ .overlay-title, .overlay-desc {
+    /* margin: 20px; */
+    width: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+ }
+
+ .overlay-title {
+    font-size: 3rem;
+ }
+
+ .overlay:hover {
+    opacity: 1;
+ }
+
+ .large {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+ }
+
+ .overlay-large {
+    background-color: bisque;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+ }
+
+ /* Footer */
+ .footer {
+    width: 100%;
+    height: auto;
+    background-color: gray;
+ }
+
+ .footer-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+ }
+
+ .footer-navbar-list {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    margin: 50px 0;
+    
+ }
+
+.footer-navbar-list a {
+    font-size: 1.8rem;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-desc {
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1300px) {
+    body {
+        background-color: aqua;
+    }
+    
+    .nav-container, .navlist {
+        display: block;
+        flex-direction: row;
+    }
+
+    .nav-list {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-logo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header {
+        display: block;
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .school-list-item, .joblist-item {
+        font-size: 1.2rem;
+    }
+
+    .desc{
+        font-size: 1.5rem;
+    }
+
+    .main-info {
+        font-size: 1.3rem;
+    }
+
+    .overlay h2 {
+        font-size: 1.1rem ;
+    }
+
+    .overlay h1  {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .overlay h1 {
+        font-size: 1.8rem;
+    }
+    
+    p, .overlay h2 {
+        font-size: 1rem;
+    }
+
+    .school-list-item, .joblist-item {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 870px) {
+    
+    .skill-info {
+        padding: 50px 150px;
+    }
+    .skill-header {
+        font-size: 1.5rem;
+    }
+
+    .personal-img {
+        display: none;
+    }
+
+    .personal-desc {
+        width: 100%;
+    }
+
+    .desc {
+        font-size: 1.3rem;
+    }
+
+    .main-info {
+        font-size: 1.1rem;
+    }
+    
+    .resume-container {
+        display: block;
+        padding: none;
+    }
+    .education, .experience {
+       width: 100%;
+
+    }
+
+    .personal-education {
+       padding: 0px;
+       border-right: none;
+    }
+
+    .personal-experience {
+        padding: 0px;
+    }
+
+    .joblist {
+        font-size: 1.1rem;
+    }
+
+    .overlay h2 {
+        display: flex;
+    }
+
+    .footer-navbar-list li a {
+        font-size: 1.3rem;
+    }
+    
+}
+
+@media (min-width: 576px) and (max-width: 850px) {
+    .nav-list {
+        width: 100%;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .school-list-item, .joblist-item {
+        font-size: 0.8rem;
+    }
+
+    .overlay h2 {
+        display: none;
+    }
+
+    .overlay h1  {
+        font-size: 1.2rem;
+    }
+
+    
+}
